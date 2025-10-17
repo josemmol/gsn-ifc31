@@ -1,7 +1,8 @@
+### Task 1
 1. Review the practice lab tasks in the Concept section.
 1. Click Start Lab or Open AWS Console to begin.
 1. Follow the lab instructions carefully, and use the arrows to navigate between steps.
-### dsaffdf
+### Task 2
 
 1. In the top navigation bar search box, type:
 ec2
