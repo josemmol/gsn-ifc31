@@ -1,16 +1,14 @@
 # Introduction to Cloud Computing Using Amazon EC2
 
-Introduir la computacio al nuvol emprant Amazon EC2
-
 ### Task 0: Download user-data.txt
 - Download the following file from the GitHub repository to your computer:
   
   https://raw.githubusercontent.com/josemmol/gsn-ifc31/refs/heads/main/AWS/EC2-firststeps/user-data.txt
 
 ### Task 1: Open AWS Console
-1. Accedir a AWS Academy en concret a Academy Learner Lab.
-2. Launch AWS Academy Learner Lab
-3. Click Start Lab and Open AWS Console to begin.
+1. Access ***AWS Academy***, specifically the `Academy Learner Lab`.
+2. Launch ***AWS Academy Learner Lab***
+3. Click ***Start Lab*** and Open `AWS Console` to begin.
 
 The objective is to launch two EC2 instances within the same region, but in different availability zones. Both instances will publish a web service that will be accessible via an Elastic IP (public IP).
 
