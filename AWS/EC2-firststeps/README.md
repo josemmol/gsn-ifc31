@@ -3,9 +3,10 @@
 Introduir la computacio al nuvol emprant Amazon EC2
 
 ### Task 0: Download user-data.txt
-- Descarrega al teu ordinador el següent fitxer del repositori de github:
-- 
-/home/jmmol/github/gsn-ifc31/AWS/EC2-firststeps/user-data.txt
+- Download the following file from the GitHub repository to your computer:
+  
+  https://raw.githubusercontent.com/josemmol/gsn-ifc31/refs/heads/main/AWS/EC2-firststeps/user-data.txt
+
 ### Task 1: Open AWS Console
 1. Accedir a AWS Academy en concret a Academy Learner Lab.
 2. Launch AWS Academy Learner Lab
