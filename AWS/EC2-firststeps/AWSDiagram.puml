@@ -1,0 +1,56 @@
+@startuml
+' Uncomment the line below for "dark mode" styling
+'!$AWS_DARK = true
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v20.0/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSSimplified.puml
+!include AWSPuml/Compute/EC2.puml
+!include AWSPuml/Compute/EC2Instance.puml
+!include AWSPuml/Groups/AWSCloud.puml
+!include AWSPuml/Groups/VPC.puml
+!include AWSPuml/Groups/AvailabilityZone.puml
+!include AWSPuml/Groups/PublicSubnet.puml
+!include AWSPuml/Groups/PrivateSubnet.puml
+!include AWSPuml/NetworkingContentDelivery/VPCNATGateway.puml
+!include AWSPuml/NetworkingContentDelivery/VPCInternetGateway.puml
+
+hide stereotype
+'skinparam linetype ortho
+
+AWSCloudGroup(cloud) {
+  VPCGroup(vpc) {
+  
+    AvailabilityZoneGroup(az_1, "\tAvailability Zone 1\t") {
+      PrivateSubnetGroup(az_1_private, "Private subnet") {
+        EC2Instance(az_1_ec2_1, "Instance", "") #Transparent
+      }
+
+
+    }
+
+    AvailabilityZoneGroup(az_2, "\tAvailability Zone 2\t") {
+      PrivateSubnetGroup(az_2_private, "Private subnet") {
+        EC2Instance(az_2_ec2_1, "Instance", "")
+
+        
+      }
+
+
+    }
+
+  }
+
+}
+
+left to right direction
+
+actor "Web Browser" as browser
+
+browser --> az_1_ec2_1
+browser --> az_2_ec2_1
+
+VPCInternetGateway(internet_gateway, "Internet Gateway", "")
+az_1_ec2_1 -- internet_gateway
+az_2_ec2_1 -- internet_gateway
+@enduml
