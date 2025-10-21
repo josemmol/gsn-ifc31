@@ -68,6 +68,9 @@ AWS diagram
 1. Click the `EC2 Instance Connect` tab.
 1. For ***Instance ID***, keep the default choice of ***Connect using a Public IP***.
 1. Change the file `/var/www/html/index.html` so that your name appears on the page.
+   
+   Note: Make sure the httpd service is active by running command
+   `sudo systemctl start|stop|restart|status httpd.service`
 - Take a screenshot of the browser
 - Take a screenshot of the console
 
