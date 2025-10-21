@@ -62,6 +62,37 @@ AWS diagram
 - The public DNS and the security group are used to access the instance details that appear on the webpage. The public DNS record translates a domain name to an IP address. The record informs the browser which server to connect to.
 - Take a screenshot of the browser
 
-### Task 3: Creating the Second EC2 Instance
-- Create the second EC2 instance in the same way as the previous one, but select the `second-subnet`, which belongs to the other availability zone.
+### Task 4: Connect to EC2 instances
+1. Return to the ***Instances*** page on the Amazon EC2 console.
+1. In the ***Instances*** section, click `Connect`.
+1. Click the `EC2 Instance Connect` tab.
+1. For ***Instance ID***, keep the default choice of ***Connect using a Public IP***.
+1. Change the file `/var/www/html/index.html` so that your name appears on the page.
 - Take a screenshot of the browser
+- Take a screenshot of the console
+
+### Task 5: Connect to EC2 instances with SSH client
+1. Go to ***AWS Academy Learner Lab*** and click on `AWS Details`.
+2. In the ***SSH key*** click on `Download PEM`.
+3. Return to the ***Instances*** page on the Amazon EC2 console.
+4. In the ***Instances*** section, click `Connect`.
+5. Click the `SSH Client` tab.
+6. Follow the instructions.
+1. Run the following command `journalctl -u sshd.service -xe`
+- Take a screenshot of the console
+- Identify at least two connections: one from **Task 4** and another from **Task 5**.
+
+### Task 6: Creating the Second EC2 Instance
+- Create the second EC2 instance in the same way as the previous one, but select the `second-subnet`, which belongs to the other availability zone. 
+- El nom ha de ser `webserver01`
+- Take a screenshot of the browser
+
+### Task 7: Connect to EC2 instances
+- With `EC2 Instance Connect`, connect to the console and Change the file `/var/www/html/index.html` so that your name appears on the page.
+- Take a screenshot of the browser
+- Take a screenshot of the console
+
+### Task 8: Connect to EC2 instances with SSH client
+Run the following command `journalctl -u sshd.service -xe`
+- Take a screenshot of the console
+- Identify at least two connections: one from **Task 4** and another from **Task 5**.
