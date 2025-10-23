@@ -87,7 +87,7 @@ AWS diagram
 
 ### Task 6: Creating the Second EC2 Instance
 - Create the second EC2 instance in the same way as the previous one, but select the `second-subnet`, which belongs to the other availability zone. 
-- El nom ha de ser `webserver01`
+- El nom ha de ser `webserver02`
 - Take a screenshot of the browser
 
 ### Task 7: Connect to EC2 instances
